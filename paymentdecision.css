@@ -1,0 +1,108 @@
+/* General Styling for Payment Status Card */
+.payment-status-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  max-width: 400px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 123, 255, 0.2); /* Blue shadow */
+  z-index: 999;
+  font-family: 'Poppins', sans-serif;
+  animation: fade-in 0.3s ease-out;
+  border-top: 8px solid #007bff; /* Blue Accent */
+}
+
+/* Fade-In Animation */
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Success Accent */
+.payment-status-success {
+  border-top-color: #007bff; /* Blue */
+}
+
+/* Failure Accent */
+.payment-status-failure {
+  border-top-color: #dc3545; /* Red */
+}
+
+/* Heading Styling */
+.payment-status-heading {
+  font-size: 22px;
+  font-weight: 600;
+  color: #333;
+  margin: 20px 0 10px;
+}
+
+/* Logo Styling */
+.image-logo {
+  width: 80px;
+  height: auto;
+  margin: 10px auto 20px;
+  display: block;
+}
+
+/* Button Styling */
+.payment-status-dashboard-button {
+  display: inline-block;
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 8px;
+  margin-top: 20px;
+  transition: background-color 0.3s ease, transform 0.2s;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.2); /* Subtle button shadow */
+}
+
+/* Button Hover Effect */
+.payment-status-dashboard-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* Failure Heading Color */
+.payment-status-failure .payment-status-heading {
+  color: #dc3545; /* Red */
+}
+
+/* Success Heading Color */
+.payment-status-success .payment-status-heading {
+  color: #007bff; /* Blue */
+}
+
+/* Responsive Design */
+@media screen and (max-width: 480px) {
+  .payment-status-container {
+    padding: 20px;
+  }
+
+  .payment-status-heading {
+    font-size: 18px;
+  }
+
+  .payment-status-dashboard-button {
+    font-size: 13px;
+    padding: 10px 16px;
+  }
+
+  .image-logo {
+    width: 70px;
+  }
+}
