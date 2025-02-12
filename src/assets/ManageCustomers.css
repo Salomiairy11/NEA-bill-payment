@@ -1,0 +1,74 @@
+/* Container wrapping the table */
+.manage-customers-container {
+  max-height: 600px;           /* Adjust height as needed */
+  overflow-y: auto;           /* Vertical scrollbar when needed */
+  margin: 20px auto;
+  margin-left: 280px; 
+  padding: 20px;
+  width: 70%;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Table styling */
+.manage-customers-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.manage-customers-table th,
+.manage-customers-table td {
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.manage-customers-table th {
+  background-color: #009879;
+  color: #fff;
+  font-weight: bold;
+}
+
+.manage-customers-table tr:nth-child(even) {
+  background-color: #f3f3f3;
+}
+
+.manage-customers-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Button styling */
+.manage-customers-table button {
+  padding: 8px 12px;
+  background-color: #009879;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.manage-customers-table button:hover {
+  background-color: #007a63;
+}
+
+/* Custom scrollbar styling for webkit browsers */
+.manage-customers-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+.manage-customers-container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.manage-customers-container::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.manage-customers-container::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

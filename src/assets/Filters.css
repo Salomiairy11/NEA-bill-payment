@@ -1,0 +1,30 @@
+.filters {
+  width: 200px;
+  background-color: #34495e;
+  color: white;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  height: calc(100% - 80px); /* Adjust height to avoid overlap with navbar */
+  top: 80px; /* Set to navbar height */
+}
+
+
+.filters a {
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+}
+
+.filters a:hover {
+  background-color: #1abc9c;
+}
+
+.filters h4 {
+  margin-top: 15px;
+  font-size: 14px;
+  color: #bdc3c7;
+}

@@ -1,0 +1,95 @@
+.bill-container {
+  width: 80%;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  font-family: 'Arial', sans-serif;
+}
+
+.bill-details {
+  padding: 20px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.bill-details img {
+  width: 120px; /* Adjust size of logo */
+  margin-bottom: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.bill-details h2 {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  font-weight: bold;
+}
+
+.bill-details p {
+  font-size: 16px;
+  margin: 10px 0;
+  color: #555;
+}
+
+.bill-details p strong {
+  font-weight: bold;
+  color: #333;
+}
+
+.bill-details p span {
+  font-weight: normal;
+}
+
+.bill-details .section-heading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #4CAF50;
+  margin-top: 30px;
+}
+
+.bill-details .total-section {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.bill-details .total-amount {
+  font-size: 20px;
+  color: #e53935;
+  font-weight: bold;
+}
+
+.bill-details .footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 14px;
+  color: #777;
+  border-top: 1px solid #ddd;
+  padding-top: 10px;
+}
+
+.bill-details .footer p {
+  margin: 5px 0;
+}
+
+/* Style for the borders to give a clean, structured look */
+.bill-details p {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.bill-details p:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.error{
+  color:#e53935;
+}

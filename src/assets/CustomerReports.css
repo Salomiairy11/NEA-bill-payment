@@ -1,0 +1,91 @@
+/* Container */
+.customer-reports-container {
+    display: flex;
+    flex-direction: column;
+  width: 70%;
+  margin: 30px auto;
+  margin-left: 290px;
+  text-align: center;
+  padding: 30px;
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.logoReport{
+    margin-left: 275px;
+    width:fit-content;
+    height:90px;
+}
+/* Title */
+.customer-reports-container h1 {
+  color: #004d40;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Flexbox layout for report cards */
+.report-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Add gap between cards */
+  justify-content: space-between; /* Space between cards */
+}
+
+/* Individual Report Card */
+.report-card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  width: 38%; /* Two cards per row */
+  height:55%;
+  margin-bottom: 4%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Title inside report cards */
+.report-card h2 {
+  color: #00796b;
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+/* Content inside report cards (text) */
+.report-card p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+/* Lists inside report cards */
+.report-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.report-card li {
+  font-size: 16px;
+  padding: 5px 0;
+  color: #555;
+}
+
+/* Hover effect on the cards */
+.report-card:hover {
+  transform: scale(1.02);
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .report-card {
+    width: 100%; /* Stack the cards vertically on small screens */
+  }
+}
