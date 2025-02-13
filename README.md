@@ -54,3 +54,9 @@ CREATE TABLE no_light_contacts (
     remarks TEXT NOT NULL,
     PRIMARY KEY (id)
 );
+
+After creating these tables, make sure you enter some data into your demandtype and branches table, then use this query to register an admin straight from your db as my register form doesnt allow admin registration. 
+
+INSERT INTO login (email, password, usertype, customer_id, sc_no, address, phoneNo, branch_id, demandType)
+VALUES ('admin@example.com', 'passwordPASS123', 'admin', 
+        'CUSTA1B2C3', 'SCD4E5F6', 'Admin address', '1234567890', 1, '15A'); <--here 1 refers to branch id, you write whatevr value you have enytered fro branchid in your branches table, and same goes for dmandType)
